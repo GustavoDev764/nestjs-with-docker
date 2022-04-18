@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  api:
+    container_name: nest_api
+    build: .
+    ports:
+    - "3000:3000"
+
+  database:
+    container_name: nest_db
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: nestjs
+      POSTGRES_USER: gustavo23
+      POSTGRES_PASSWORD: gustavo23          
+    

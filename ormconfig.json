@@ -1,0 +1,13 @@
+{
+  "portserve": 3000,
+  "type": "postgres",
+  "host": "database",
+  "port": 5432,
+  "username": "gustavo23",
+  "password": "gustavo23",
+  "database": "nestjs",
+  "entities": ["dist/**/*.entity{.ts,.js}"],
+  "migrations": ["dist/**/migrations/*{.ts,.js}"],
+  "synchronize": true,
+  "jwtsecret": "b71939b9911ea40518c378ab206cba17"
+}

@@ -37,7 +37,7 @@ Esta é uma aplicação [Node](https://nodejs.org/en/) simples para avaliar o co
 ## Requisitos
 Construir o conjunto de APIs abaixo. APIs estas que farão operações sobre uma tabela de banco de dados relacional (postgresql).
   
-1. __GET__ _/api/login?user={user}&pwd={senha}_
+1. :heavy_check_mark: __GET__ _/api/login?user={user}&pwd={senha}_
 
 _Response:_
 ```json
@@ -47,7 +47,7 @@ _Response:_
   
 ```
 
-2. __POST__ _/api/user_
+2. :heavy_check_mark: __POST__ _/api/user_
 _Request:_
 ```json
 {
@@ -69,7 +69,7 @@ _Response:_
 }
 ```
 
-3. __PATCH__ _/api/user/{user_id}_
+3. :heavy_check_mark: __PATCH__ _/api/user/{user_id}_
 _Request:_
 ```json
 {
@@ -90,14 +90,14 @@ _Response:_
 ```
 ### Bonus
 
-1. Para todas as APIs requeridas acima (exceto Login), deverá também haver uma forma de fazer a mesma operação via filas Rabbitmq.
-2. Caso conheça [Typescript](https://www.typescriptlang.org/) este teste deve ser realizado nesta linguage.
+1. :x: Para todas as APIs requeridas acima (exceto Login), deverá também haver uma forma de fazer a mesma operação via filas Rabbitmq.
+2. :heavy_check_mark: Caso conheça [Typescript](https://www.typescriptlang.org/) este teste deve ser realizado nesta linguage.
 
 ## Requisitos de Aceite
 
-1. O sistema deve rodar com um docker-compose através do comando abaixo, que iniciará o serviço web na porta __3000__.
+1. :heavy_check_mark: O sistema deve rodar com um docker-compose através do comando abaixo, que iniciará o serviço web na porta __3000__.
 ```bash
 $ docker-compose up
 ```
-2. O docker compose em questão deve criara toda a infraestrura de software necessária para que aplicação funcione.
-3. Este readme deve ser sobrescrito, adicionando aqui a documentação para a utilização do sistema.
+2. :heavy_check_mark: O docker compose em questão deve criara toda a infraestrura de software necessária para que aplicação funcione.
+3. :heavy_check_mark: Este readme deve ser sobrescrito, adicionando aqui a documentação para a utilização do sistema.
